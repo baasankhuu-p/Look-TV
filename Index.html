@@ -1,13 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" sizes="16x16" href="SVG/LookTv.png">
     <meta charset="UTF-8">
+    <meta name="description" content="Look tv Movie Site">
+    <meta name="keywords" content="Look, Tv, Movie, Кино, Kino site,кино сайт">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lOOKtv</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/All.css">
+    <title>Look TV</title>
 </head>
-<body>
-    <h1>ACSSAC</h1>
-    <h2>ascsac</h2>
+<body onload="Clock()">
+  <script src="json.js" type="module" async></script>
+  <script src="spa.js" type="module"></script>
+  <header class="menu-header">
+      <a  class="main-links"  href="/Look-TV/Index.html"> <img class="logo" src="HIMG/logo.png" alt="Logo"></a>
+     <nav class="main-menu">
+        <ul class="menu-list">
+          <li><a class="main-links" href="/home">Нүүр</a></li>
+          <li><a class="main-links" href="/Bagts">Багц</a></li>
+          <li><a class="main-links" href="/sale">Урамшуулал</a></li>
+          <li><a class="main-links" href="/Turees">Түрээсэлсэн</a></li>
+          <li><a class="main-links" href="/Tv">ТВ</a></li>
+        </ul>
+        <div class="search-movie">
+          <select id="Select_Movie">
+            <option value="All">Бүх</option>
+            <option value="Mov">Киноны нэр</option>
+            <option value="act">Жүжигчин</option>
+            <option value="aut">Зохиолч</option>
+          </select>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Кино, ТВ шоуг хайх" title="Хайх кино, ТВ-гээ оруулна уу">
+            <button type="submit" title="Хайх">Хайх</button>
+        </div>
+      <ul class="icon-list">
+          <li><a class="main-links" href="/information" class="icon-information"><img src="SVG/profile.svg"  alt="profile" title="Мэдээлэл"></a></li>
+          <li><a class="main-links" href="/content" class="icon-content"><img src="SVG/time.svg" alt="time" title="Контент үзсэн түүх"></a></li>
+          <li><a class="main-links" href="/setting" class="icon-settings"><img src="SVG/setting.svg" alt="setting" title="Тохиргоо"></a></li>
+          <li><a class="main-links" href="/help" class="icon-help"><img src="SVG/help.svg" alt="help" title="Тусламж"></a></li>
+          <li><a class="main-links" href="/logout" class="icon-link"><img src="SVG/sign-out.svg" alt="sign-out" title="Гарах"></a></li>
+      </ul>
+      </nav>
+  </header>
+  <style>
+    .mySlides {display: none}
+  </style>
+    <main id="myMain">
+      
+    </main>
+    <script>
+      
+  function updateClock(){
+    ///Automatic clock
+    var now = new Date();
+    var yr = now.getFullYear(),
+        hou = now.getHours(),
+        min = now.getMinutes(),
+        sec = now.getSeconds();
+        if(hou == 0){
+          hou = 00;
+        }
+        if(hou > 24){
+          hou = hou - 24;
+        }
+
+        Number.prototype.p = function(digits){
+          for(var n = this.toString(); n.length < digits; n = 0 + n);
+          return n;
+        }
+        var ids = ["hour", "minutes", "seconds"];
+        var values = [hou.p(2), min.p(2), sec.p(2)];
+        for(var i = 0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+  }
+
+  function Clock(){
+    updateClock();
+    window.setInterval("updateClock()", 1);
+  }
+      //Big images slider
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+      //Tv Change
+      function changeSrc(anything,title){
+			document.querySelector('.tvsChanges').src = anything;
+			document.querySelector('.tvsChanges').title = title;
+      console.log(anything)
+		}
+      </script>
+    <div class="messenger">
+      <a href="#"><img src="SVG/chat.png" alt="Chat" title="Холбоо барина уу"></a>
+    </div>
+    <script src="./modules/components/Home.js" type="module"></script>
+    <script src="./modules/components/bagt.js" type="module"></script>
+    <footer>
+      <nav class="foot-nav">
+        <article class="footer-nav">
+          <h2 class="footer-package">Багц</h2>
+          <p><a class="main-links" href="/Bagts">Хит цуврал</a></p>
+          <p><a class="main-links" href="/Bagts">Аниме</a></p>
+          <p><a class="main-links" href="/Bagts">HBO олон ангит</a></p>
+          <p><a class="main-links" href="/Bagts">Хүүхдийн багц</a></p>
+          <p><a class="main-links" href="/Bagts">Орос-Европ багц</a></p>
+        </article>
+        <article class="footer-nav">
+            <h2 class="footer-help">Тусламж</h2>
+            <p><a href="#">Холбоо барих</a></p>
+            <p><a href="#">Сошиал хуудас</a></p>
+            <p><a href="#">Онлайн хуудас</a></p>
+        </article>
+        <article class="footer-nav">
+            <h2 class="footer-regist">Бүртгэл</h2>
+            <p><a class="main-links" href="/logout">Гарах</a></p>
+            <p><a href="#">Нууц үг солих</a></p>
+        </article>
+        <article class="footer-nav">
+          <h2 class="footer-setting">Тохиргоо</h2>
+          <p><a class="main-links" href="/setting">Тохиргоо</a></p>
+          <p><a class="main-links" href="/information">Хувийн мэдээлэл</a></p>
+          <p><a href="#">Имейл</a></p>
+        </article>
+        <article class="footer-nav">
+            <h2 class="footer-sale">Урамшуулал</h2>
+            <p><a class="main-links" href="/Sale">Байнгын</a></p>
+            <p><a class="main-links" href="/Sale">Баяр ёслолын</a></p>
+        </article>
+      </nav>
+    </footer>
 </body>
 </html>
