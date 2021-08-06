@@ -801,7 +801,7 @@ myMain.AddRoute("/", "/Bagts", bagts);
 myMain.AddRoute("/", "/sale", sale);
 myMain.AddRoute("/", "/Turees", turees);
 myMain.AddRoute("/", "/Tv", tv);
-myMain.AddRoute("/", "/", TVRouter);
+myMain.AddRoute("/", "/Index.html", TVRouter);
 myMain.AddRoute("/", "/information", information);
 myMain.AddRoute("/", "/content", content);
 myMain.AddRoute("/", "/setting", setting);
