@@ -113,6 +113,14 @@
       console.log(anything)
 		}
       </script>
+      <script type="module">
+        // This is the "Offline page" service worker
+        
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+        </script>
     <div class="messenger">
       <a href="#"><img src="SVG/chat.png" alt="Chat" title="Холбоо барина уу"></a>
     </div>
