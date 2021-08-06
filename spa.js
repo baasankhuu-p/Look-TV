@@ -47,7 +47,7 @@ class Turees {
           <p class="NM"><b>Нэр:</b> ${rounds.name}</p>
           <p class="ST" style="font-family: 'Russo One', sans-serif;font-size: 15px;"><b>Эхлэх:</b> ${rounds.start}</p>
           <p class="DU" style="font-family: 'Russo One', sans-serif;font-size: 15px;"><b>Дуусах:</b> ${rounds.end}</p>
-          <form action="${rounds.URL}">
+          <form action="Төлбөр_төлөх.html">
             <button class="due">${rounds.due}</button>
           </form>
         </div>
@@ -457,9 +457,9 @@ const homeDataObj = {
   ],
   Tolbor:"Төлбөрийн мэдээлэл",
   piece:[
-      {UseDate:"1 сар",id:16000,Bagts:"Багц","TV_ERH":"3 сар үзэх", Tohooromj:"4 Кино",Avah:"авах",divClass:"piece_price2"},
-      {UseDate:"3 сар",id:35000,Bagts:"Багц","TV_ERH":"5 сар үзэх", Tohooromj:"10 Кино",Avah:"авах",divClass:"piece_price2"},
-      {UseDate:"6 сар",id:75000,Bagts:"Багц","TV_ERH":"9 сар үзэх", Tohooromj:"25 Кино",Avah:"авах",divClass:"piece_price2"}
+      {UseDate:"1 сар",id:4000,Bagts:"Багц", Tohooromj:"төхөөрөмж",Avah:"авах",divClass:"piece_price2"},
+      {UseDate:"3 сар",id:12000,Bagts:"Багц", Tohooromj:"төхөөрөмж",Avah:"авах",divClass:"piece_price2"},
+      {UseDate:"6 сар",id:20000,Bagts:"Багц", Tohooromj:"төхөөрөмж",Avah:"авах",divClass:"piece_price2"}
   ]
 }
 //#endregion
@@ -505,29 +505,29 @@ const tureesDataObj = {
     "round":[
       {
         "information":[
-          {"src":"Look-TV/HIMG/Child/1.jpg","name":"Трансформ","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Child/2.jpg","name":"Пороро","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Child/6.jpg","name":"Таяо","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Child/4.jpg","name":"Ноён Стони","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Child/5.jpg","name":"Мөнх-Тунх","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"}
+          {"src":"Look-TV/HIMG/Child/1.jpg","name":"Трансформ","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Child/2.jpg","name":"Пороро","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Child/6.jpg","name":"Таяо","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Child/4.jpg","name":"Ноён Стони","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Child/5.jpg","name":"Мөнх-Тунх","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"}
         ]
       },
       {
         "information":[
-          {"src":"Look-TV/HIMG/Anime/1.jpg","name":"My Hero","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Anime/2.jpg","name":"Япон хүүхэлдэй","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Anime/3.jpg","name":"MMO Junkie","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Anime/4.jpg","name":"Orange","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Anime/5.jpg","name":"Ноён Стони","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
+          {"src":"Look-TV/HIMG/Anime/1.jpg","name":"My Hero","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Anime/2.jpg","name":"Япон хүүхэлдэй","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Anime/3.jpg","name":"MMO Junkie","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Anime/4.jpg","name":"Orange","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Anime/5.jpg","name":"Ноён Стони","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"}
         ]
       },
       {
         "information":[
-          {"src":"Look-TV/HIMG/Hit/1.jpg","name":"Явуулын гуанз","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Hit/2.jpg","name":"Залуу тулаанч","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Hit/3.jpg","name":"Цагдаагийн түүх","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Hit/4.jpg","name":"Цагдаагийн түүх3","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
-          {"src":"Look-TV/HIMG/Hit/5.jpg","name":"Үхлийн тоглоом","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах","URL":"/"},
+          {"src":"Look-TV/HIMG/Hit/1.jpg","name":"Явуулын гуанз","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Hit/2.jpg","name":"Залуу тулаанч","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Hit/3.jpg","name":"Цагдаагийн түүх","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Hit/4.jpg","name":"Цагдаагийн түүх3","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"},
+          {"src":"Look-TV/HIMG/Hit/5.jpg","name":"Үхлийн тоглоом","start":"2021/08/08 23:59:59","end":"2021/09/08 23:59:59","due":"Сунгах"}
         ]
       }
     ]
@@ -801,7 +801,7 @@ myMain.AddRoute("/", "/Bagts", bagts);
 myMain.AddRoute("/", "/sale", sale);
 myMain.AddRoute("/", "/Turees", turees);
 myMain.AddRoute("/", "/Tv", tv);
-myMain.AddRoute("/", "/Index.html", TVRouter);
+myMain.AddRoute("/", "/", TVRouter);
 myMain.AddRoute("/", "/information", information);
 myMain.AddRoute("/", "/content", content);
 myMain.AddRoute("/", "/setting", setting);
@@ -836,6 +836,7 @@ myMain.OnRoute(location.pathname);
 //myMain.OnRoute("/sale");
 //myMain.OnRoute("/Turees");
 //myMain.OnRoute("/Tv");
+myMain.OnRoute("/");
 //myMain.OnRoute("/information");
 //myMain.OnRoute("/content");
 //myMain.OnRoute("/setting");
