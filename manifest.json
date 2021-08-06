@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Look TV",
+    "short_name": "Look TV",
+    "scope": "/Look-TV/Index.html",
+    "display": "standalone",
+    "start_url": "/Look-TV/Index.html",
+    "background_color": "#0011ff",
+    "theme_color": "#80adf4",
+    "description": "Look tv Movie Site",
+    "orientation": "portrait",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "screenshots": []
+  }
