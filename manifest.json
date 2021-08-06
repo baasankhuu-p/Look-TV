@@ -5,34 +5,34 @@
   "short_name": "look-tv",
   "scope": "/Look-TV/Index.html",
   "display": "standalone",
-  "start_url": "",
-  "background_color": "transparent",
-  "theme_color": "transparent",
+  "start_url": "/Look-TV/Index.html",
+  "background_color": "#0073ff",
+  "theme_color": "#4285f4",
   "description": "Look tv Movie Site",
   "orientation": "portrait",
   "related_applications": [],
   "prefer_related_applications": false,
   "icons": [
         {
-          "src": "baasankhuu123.github.io/Look-TV/PWABuilderIcons/LookTV_48-48.png",
+          "src": "PWABuilderIcons/LookTV_48-48.png",
           "sizes": "48x48",
           "purpose": "any maskable",
           "type": "image/png"
         },
         {
-          "src": "baasankhuu123.github.io/Look-TV/PWABuilderIcons/LookTV_96-96.png",
+          "src": "PWABuilderIcons/LookTV_96-96.png",
           "sizes": "96x96",
           "purpose": "any maskable",
           "type": "image/png"
         },
         {
-          "src": "baasankhuu123.github.io/Look-TV/PWABuilderIcons/LookTV_128-128.png",
+          "src": "PWABuilderIcons/LookTV_128-128.png",
           "sizes": "128x128",
           "purpose": "any maskable",
           "type": "image/png"
         },
         {
-          "src": "baasankhuu123.github.io/Look-TV/PWABuilderIcons/LookTV_512-512.png",
+          "src": "PWABuilderIcons/LookTV_512-512.png",
           "sizes": "512x512",
           "purpose": "any maskable",
           "type": "image/png"
