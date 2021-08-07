@@ -2,7 +2,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.1.5/workbox
 
 const CACHE = "pwabuilder-page";
 //offline page
-const offlineFallbackPage = "Look-TV/offline.html";
+const offlineFallbackPage = "offline.html";
 
 self.addEventListener("message", (event) => {
     if (event.data && event.data.type === "SKIP_WAITING") {
