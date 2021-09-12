@@ -457,9 +457,9 @@ const homeDataObj = {
   ],
   Tolbor:"Төлбөрийн мэдээлэл",
   piece:[
-      {UseDate:"1 сар",id:4000,Bagts:"Багц", Tohooromj:"төхөөрөмж",Avah:"авах",divClass:"piece_price2"},
-      {UseDate:"3 сар",id:12000,Bagts:"Багц", Tohooromj:"төхөөрөмж",Avah:"авах",divClass:"piece_price2"},
-      {UseDate:"6 сар",id:20000,Bagts:"Багц", Tohooromj:"төхөөрөмж",Avah:"авах",divClass:"piece_price2"}
+      {UseDate:"1 сар",id:12000, Tohooromj:"2 төхөөрөмж",Avah:"авах",TV_ERH : '3 сар үнэгүй',divClass:"piece_price2"},
+      {UseDate:"4 сар",id:35000, Tohooromj:"2 төхөөрөмж",Avah:"авах",TV_ERH : '4 сар үнэгүй',divClass:"piece_price2"},
+      {UseDate:"7 сар",id:50000, Tohooromj:"3 төхөөрөмж",Avah:"авах",TV_ERH : '7 сар үнэгүй',divClass:"piece_price2"}
   ]
 }
 //#endregion
