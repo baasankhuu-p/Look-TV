@@ -112,7 +112,7 @@ const recentNews = new RecentNews("https://api.jsonbin.io/b/6082a9a59a9aa9333355
 recentNews.Download("main");
 
 //Download news in every 60 seconds into #main
-setInterval(() => recentNews.Download("main"), 60000);
+setInterval(() => recentNews.Download("main"), 600);
 
 //Upload updated news in every 15 seconds back to server
-setInterval( () => recentNews.Upload(), 15000);
+setInterval( () => recentNews.Upload(), 150);
